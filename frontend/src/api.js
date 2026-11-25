@@ -1,0 +1,1 @@
+import axios from "axios";const a=axios.create({baseURL:"http://127.0.0.1:8000/api"});a.interceptors.request.use(c=>{let t=localStorage.getItem("token");if(t)c.headers.Authorization=`Bearer ${t}`;return c});export const post=(u,d)=>a.post(u,d);export const get=u=>a.get(u);export const patch=(u,d)=>a.patch(u,d);export default a;

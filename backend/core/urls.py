@@ -1,0 +1,3 @@
+from django.urls import path
+from .views import *
+urlpatterns=[path("register/",Register.as_view()),path("login/",Login.as_view()),path("me/",Me.as_view()),path("banking/",Banking.as_view()),path("feedback/",FeedbackAPI.as_view()),path("options/",Options.as_view()),path("disease/",DiseaseAPI.as_view()),path("soil/",SoilAPI.as_view()),path("crop-idea/",CropIdea.as_view()),path("roadmap/",Roadmap.as_view()),path("labour/",Labour.as_view()),path("price/",Price.as_view()),path("guides/",Guides.as_view()),path("guide-payment/",GuidePayment.as_view()),path("history/",DiseaseHistory.as_view()),path("guide/farmers/",GuideFarmers.as_view()),path("guide/knowledge/",GuideKnowledge.as_view()),path("guide/history/",GuideHistory.as_view())]
